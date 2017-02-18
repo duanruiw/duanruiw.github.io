@@ -1,5 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-18T15:27:34+08:00</updated><id>http://localhost:4000/</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/02/18/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-02-18T15:05:41+08:00</published><updated>2017-02-18T15:05:41+08:00</updated><id>http://localhost:4000/jekyll/update/2017/02/18/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/02/18/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-18T16:57:12+08:00</updated><id>http://localhost:4000/</id><title type="html">zuixingxing’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">GitHub+jekyll 博客搭建</title><link href="http://localhost:4000/jekyll/github/2017/02/18/GitHub+jekyll-%E5%8D%9A%E5%AE%A2.html" rel="alternate" type="text/html" title="GitHub+jekyll  博客搭建" /><published>2017-02-18T15:59:41+08:00</published><updated>2017-02-18T15:59:41+08:00</updated><id>http://localhost:4000/jekyll/github/2017/02/18/GitHub+jekyll%20%20%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/jekyll/github/2017/02/18/GitHub+jekyll-%E5%8D%9A%E5%AE%A2.html">&lt;p&gt;利用Github提供的Pages功能，把本地搭建的Jekyll站点部署上去，实现一个自由定制的个人静态博客&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;主要参考：&lt;a href=&quot;http://pwnny.cn/original/2016/06/26/MakeBlog.html#NativeBuild03&quot;&gt;Jekyll和Github搭建个人静态博客&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&quot;本地搭建jekyll-以下都基于windows环境&quot;&gt;本地搭建Jekyll (以下都基于Windows环境)&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ruby&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ruby是一种纯粹的面向对象编程语言。安装Jekyll需要电脑上安装Ruby，以下是安装步骤：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Window 系统下，我们可以使用 RailsInstaller 来安装 Ruby 环境，下载地址为：&lt;a href=&quot;http://railsinstaller.org/en&quot;&gt;点击进入下载页面&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;下载 RailsInstaller 之后，双击 railsinstaller-3.2.0 文件，启动 Ruby 安装向导&lt;/li&gt;
+  &lt;li&gt;点击 Next，继续向导，记得勾选 Add Ruby executables to your PATH，直到 Ruby 安装程序完成 Ruby 安装为止&lt;/li&gt;
+  &lt;li&gt;安装后，通过在命令行中输入 &lt;strong&gt;$ ruby -v&lt;/strong&gt; 命令来确保一切工作正常&lt;/li&gt;
+  &lt;li&gt;如果一切工作正常，将会输出所安装的 Ruby 解释器的版本。如果您安装了其他版本，则会显示其他不同的版本&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;安装成功示例：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ruby -v
+ruby 2.2.6p396 (2016-11-15 revision 56800) [i386-mingw32]   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;使用gem安装Jekyll&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;用RubyInstaller安装Ruby之后都附带有Gems，如有需要可以从&lt;a href=&quot;https://rubygems.org/pages/download&quot;&gt;这里单独下载RubyGems&lt;/a&gt;。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;使用命令&lt;code class=&quot;highlighter-rouge&quot;&gt;$ gem install bundler&lt;/code&gt;安装Bundler&lt;/li&gt;
+  &lt;li&gt;之后使用&lt;code class=&quot;highlighter-rouge&quot;&gt;$ gem install github-pages&lt;/code&gt;安装github pages&lt;/li&gt;
+  &lt;li&gt;安装jekyll &lt;code class=&quot;highlighter-rouge&quot;&gt;$ gem install jekyll&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;使用jekyll创建博客站点&quot;&gt;使用Jekyll创建博客站点&lt;/h4&gt;
+&lt;p&gt;自己在本地新建一个文件夹作为博客项目根目录&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mkdir myblog 
+$ jekyll new myblog 
+# 生成博客项目myblog
+$ cd myblog
+# 一定要进入创建的对应blog目录，否则服务无法开启
+$ jekyll serve
+# 启动一个地址为http://localhost:4000/的服务器
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://localhost:4000/&quot;&gt;http://localhost:4000/&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="Github" /><summary type="html">利用Github提供的Pages功能，把本地搭建的Jekyll站点部署上去，实现一个自由定制的个人静态博客 主要参考：Jekyll和Github搭建个人静态博客</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/02/18/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-02-18T15:05:41+08:00</published><updated>2017-02-18T15:05:41+08:00</updated><id>http://localhost:4000/jekyll/update/2017/02/18/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/02/18/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
