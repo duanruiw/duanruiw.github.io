@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<title>time</title>
+</head>
+
+<body>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+	<div class="container">
+		<div class="row">
+			<div align="center">
+				<div id="timestamp">	
+				</div>
+				<div class="faces">
+					<div class="face face4">
+						<svg id="clock4" class="clock"></svg>
+					</div>
+				</div>
+				<div id="date">	
+				</div>
+				<div  class="apanel panel-default" >
+					<div id="nextyear" class="panel-body" >
+						<table class="table table-condensed" style="max-width: 160px;">
+							<tbody>
+								<tr>
+									<td>NextYear:</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Milliseconds</td>
+									<td><div id="countdown_Milliseconds">	
+									</div></td>
+
+								</tr>
+								<tr>
+									<td></td>
+									<td>Seconds</td>
+									<td><div id="countdown_Seconds">	
+									</div></td>
+
+								</tr>
+								<tr>
+									<td></td>
+									<td>Minutes</td>
+									<td><div id="countdown_Minutes">	
+									</div></td>
+
+								</tr>
+								<tr>
+									<td></td>
+									<td>Hours</td>
+									<td><div id="countdown_Hours">	
+									</div></td>
+
+								</tr>
+								<tr>
+									<td></td>
+									<td>Date</td>
+									<td><div id="countdown_Date">	
+									</div></td>
+
+								</tr>
+							</tbody>
+						</table>
+						<div id="rC_B" class="redCountdownDemo"></div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<hr>
+
+		<footer>
+			<p>&copy; Company 2017</p>
+		</footer>
+	</div>
+</body>
+<script src='jquery.js'></script>
+<script src='snap.svg-min.js'></script>
+<script src="jquery.knob.min.js"></script>
+<script src="jquery.ba-throttle-debounce.min.js"></script>
+<script src="jquery.redcountdown.js"></script>
+<script src="clock.js"></script>
+</html>
